@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/controller.js"></script>
+    <title>CO²-Footprint</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Schriftkultur
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><button id="sidebarleft" class="dropdown-item" type="button">von links nach rechts</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><button id="sidebarright" class="dropdown-item" type="button">von rechts nach links</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sortieren
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><button id="rankSort" class="dropdown-item" type="button">nach Rank sortieren</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><button id="organisationSort" class="dropdown-item" type="button">nach Unternehmen sortieren</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><button id="countrySort" class="dropdown-item" type="button">nach Land sortieren</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" id="search-form">
+                        <input id="search" class="form-control me-2" type="search" placeholder="Suchen" aria-label="Search">
+                        <button id="searchdelete" class="btn btn-outline-success" type="button" style="white-space: nowrap; color:azure; background-color: blue; border-color: azure;" >Suchfeld leeren</button>
+                    </form>
+                </div>
+            </div>
+        </nav>    
+    </header>
+ 
+     <!-- Main Content -->
+    <section class="main flex-container">
+        <div id="sidebar" class="sidebar-left">
+            <div id="sidebar-items">
+                <ul class="nav flex-column sb">
+                    <li class="nav-item" style="margin-top: 300px;">
+                        <a id="link1" class="nav-item sba" href="#1">Platz 1 und aufwärts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link2" class="nav-item sba" href="#25">Platz 25 und aufwärts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link3" class="nav-item sba" href="#50">Platz 50 und aufwärts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link4" class="nav-item sba" href="#75">Platz 75 und aufwärts</a>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+        <div class="content">
+            <h1 style="padding-top: 20px;">CO²-Footprint</h1>
+            <div id="table-container" style="padding-bottom: 20px;"></div>
+            <div id="footer-elements" class="footer-elements">
+                <div class="datenschutz hidden">
+                    <p>Datenschutzerklärung:</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p>Omnis repellendus itaque labore voluptatum et temporibus,</p>
+                    <p>tenetur obcaecati nesciunt fugit. Maiores consequatur</p>
+                    <p>dolore a voluptate asperiores repellendus aspernatur</p>
+                    <p>architecto quas quisquam.</p>
+                </div>
+                <div class="impressum hidden">
+                    <p>Impressum:</p>
+                    <p>Name: Eduard Töws</p>
+                    <p>Straße: Fantasiaweg 10</p>
+                    <p>Ort: Imagination</p>
+                    <p>Postleitzahl: 12345</p>
+                    <p>e.mail-Adresse: eduard.toews@com.de</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 CO²-Footprint. Alle Rechte vorbehalten.</p>
+        <button id="button-datenschutz" class="buttons-footer">Datenschutz</button>
+        <button id="button-impressum" class="buttons-footer">Impressum</button>
+    </footer>
+</body>
+</html>
